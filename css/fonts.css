@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Roboto Light";
+
+  src: url("../fonts/Roboto-Light.eot") format("eot"), url("../fonts/Roboto-Light.otf") format("opentype"), url("../fonts/Roboto-Light.svg#GothamBold") format("svg"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+
+  src: url("../fonts/Roboto-Bold.eot") format("eot"), url("../fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto-Bold.svg#GothamBold") format("svg"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cabin";
+
+  src: url("../fonts/Cabin-Regular.eot") format("eot"), url("../fonts/Cabin-Regular.otf") format("opentype"), url("../fonts/Cabin-Regular.svg#CabinRegular") format("svg"), url("../fonts/Cabin-Regular.ttf") format("truetype"), url("../fonts/Cabin-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+
+  src: url("../fonts/PT-Sans.eot") format("eot"), url("../fonts/PT-Sans.otf") format("opentype"), url("../fonts/PT-Sans.svg#PTSans") format("svg"), url("../fonts/PT-Sans.ttf") format("truetype"), url("../fonts/PT-Sans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Georgia";
+
+  src: url("../fonts/Georgia.eot") format("eot"), url("../fonts/Georgia.otf") format("opentype"), url("../fonts/Georgia.svg#Georgia") format("svg"), url("../fonts/Georgia.ttf") format("truetype"), url("../fonts/Georgia.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/MaterialIcons-Regular.eot") format("eot"), url("../fonts/MaterialIcons-Regular.ijmap") format("ijmap"), url("../fonts/MaterialIcons-Regular.svg#MaterialIconsRegular") format("svg"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2");;
+}
+
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('../fonts/flexslider-icon.eot');
+  src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

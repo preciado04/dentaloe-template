@@ -1,0 +1,401 @@
+/* header */
+.page-header {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+/*carousel */
+.fade-carousel {
+  position: relative;
+  height: 100vh;
+}
+
+.fade-carousel .carousel-inner .item {
+  height: 100vh;
+}
+
+.carousel-indicators {
+  position: absolute;
+  left: 0;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  letter-spacing: 0px;
+  margin 0 2px;
+}
+
+.fade-carousel .carousel-indicators > li {
+  margin: 0;
+  border-color: #fff;
+  opacity: .7;
+  border: solid 2px white;
+  background:transparent;
+  box-shadow: 1px 1px 0 0 rgba(58, 58, 58, 0.2);
+}
+
+.fade-carousel .carousel-indicators > li:hover,
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: #fff;
+}
+
+/* Hero Header */
+.hero {
+  position: absolute;
+  width: 90%;
+  z-index: 3;
+  color: #fff;
+  text-align: left;
+    -webkit-transform: translate3d(-50%,-50%,0);
+       -moz-transform: translate3d(-50%,-50%,0);
+        -ms-transform: translate3d(-50%,-50%,0);
+         -o-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+}
+
+.hero h4 {
+  font-size: 22px;
+  line-height: 1.35;
+  margin-bottom: :0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.hero h2{
+  font-size: 34px;
+  color: #ea4a31;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Custom Buttons */
+.btn.btn-hero {
+  background: linear-gradient(to right, #00c2c7 0%, #0bafbe 100%);
+  outline: none;
+  font-size: 13px;
+  line-height: 24px;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  padding: 13px 46px;
+  z-index: 1;
+  color: #fff;
+  font-weight: 400;
+  transition: .33s all ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn.btn-hero::before, .btn.btn-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .22s;
+  will-change: opacity;
+  border-radius: inherit;
+}
+
+.btn.btn-hero::before {
+  background: linear-gradient(to right, #00c2c7 0%, #0bafbe 100%);
+  opacity: 1;
+  z-index: -1;
+}
+
+.btn.btn-hero::after {
+  background: #00c2c7;
+  z-index: -2;
+}
+
+.btn.btn-hero:hover,
+.btn.btn-hero:focus,
+.btn.btn-hero:active,
+.btn.btn-hero:hover {
+  color: #fff;
+}
+
+.btn.btn-hero:hover::before,
+.btn.btn-hero:focus::before,
+.btn.btn-hero:active::before,
+.btn.btn-hero:hover::before {
+  opacity: 0;
+}
+
+/* Slides backgrounds */
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .slide-1 {
+  background-image: url("../imagenes/slider-1-slide-1-1920X700.jpg");
+}
+
+.fade-carousel .slides .slide-2 {
+  background-image: url("../imagenes/slider-1-slide-2-1920X700.jpg");
+}
+
+.fade-carousel .slides .slide-3 {
+  background-image: url("../imagenes/slider-1-slide-3-1920X700.jpg");
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 1;
+}
+
+.hero .animated {
+  animation-timing-function: ease-out;
+}
+
+html:not(.lt-ie10) .not-animated {
+  opacity: 0;
+}
+
+.fadeInRightSmall {
+  animation-name: fadeInRightSmall;
+}
+
+@keyframes fadeInRightSmall {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeftSmall {
+  animation-name: fadeInLeftSmall;
+}
+
+@keyframes fadeInLeftSmall {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInRightSmall-v2 {
+  animation-name: fadeInRightSmall-v2;
+}
+
+@keyframes fadeInRightSmall-v2 {
+  0% {
+    opacity: 0;
+    transform: translateX(90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero h2 {
+  font-size: 34px;
+  font-family: "Roboto Bold";
+}
+
+.hero h4, .hero a {
+  font-family: "Roboto Light";
+}
+
+.carousel-indicators {
+  top: 82%; 
+}
+.fade-carousel {
+  margin-top: 55px;
+  padding: 0;
+}
+
+.fade-carousel {
+  margin-top: 55px;
+  padding: 0;
+}
+
+body.home .content-holder {
+  padding: 0;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  .hero {
+    top: 29%;
+    left: 36%;
+  }
+  .carousel-indicators {
+   top:82%; 
+  }
+  .hero h2 {
+    font-size: 46px;
+  }
+
+ .hero h4 {
+    font-size: 28px;
+  }
+  .fade-carousel {
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+     left:26%;
+     top:60%; 
+   }
+   
+  .hero h2 {
+    font-size: 60px;
+  }
+
+ .hero h4 {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  .fade-carousel {
+    margin-top: 190px;
+  }
+}
+
+@media (min-width: 1009px) {
+  .hero {
+     left: 45%;
+     top: 38%; 
+   }
+   
+  .fade-carousel {
+    margin-top: 213px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+     left:25%; 
+   }
+   
+  .hero h2 {
+    font-size: 72px;
+  }
+
+ .hero h4 {
+    font-size: 25px;
+  }
+
+  .fade-carousel {
+    margin-top: 146px;
+  }
+}
+
+/* Slides height */
+
+.hero {
+  left: 50%;
+  top: 140px; 
+}
+
+.carousel-indicators {
+  top: 85%;
+  margin-left: 5%;
+}
+
+.btn.btn-hero {
+  margin: 35px auto 0;
+}
+
+
+.carousel.fade-carousel.slide,
+.fade-carousel .slides div[class^="slide-"] {
+  height: 348px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 446px) {
+  .carousel.fade-carousel.slide,
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 319px
+  }
+
+  .hero {
+    left: 50%;
+    top: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel.fade-carousel.slide,
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 432px
+  }
+
+  .hero {
+    left: 42%;
+    top: 195px;
+    width: 60%;
+  }
+
+  .carousel-indicators {
+    margin-left: 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel.fade-carousel.slide,
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 474px
+  }
+
+  .hero {
+    left: 42%;
+    top: 210px;
+    width: 80%; 
+  }
+
+  .carousel-indicators {
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 994px) {
+  .carousel-indicators {
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel.fade-carousel.slide,
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 478px
+  }
+
+  .hero {
+    left: 50%;
+    top: 250px; 
+  }
+
+  .carousel-indicators {
+    margin-left: 11%;
+  }
+}
